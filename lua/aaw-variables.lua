@@ -11,7 +11,6 @@ opt.termguicolors = true
 opt.autoindent = true
 opt.encoding = "utf-8"
 
-vim.cmd "colorscheme flexoki-light"
 
 -- Dont' pass messages to |ins-completin menu|
 

@@ -16,27 +16,37 @@ vim.opt.rtp:prepend(lazypath)
 
 -- plugins list
 local plugins_list = {
-    'kepano/flexoki-neovim',
-    'bluz71/nvim-linefly',
     'nvim-telescope/telescope.nvim',
     'nvim-lua/plenary.nvim',
     '0x00-ketsu/autosave.nvim',
     'windwp/nvim-autopairs',
-     'neovim/nvim-lspconfig',
- 'hrsh7th/cmp-nvim-lsp',
- 'hrsh7th/cmp-cmdline',
- 'hrsh7th/nvim-cmp',
-'nvim-lsp-installer',
-'terrortylor/nvim-comment',
--- 'folke/which-key.nvim',
+    'terrortylor/nvim-comment',
+    'NTBBloodbath/doom-one.nvim',
+    'nvim-lualine/lualine.nvim',
+    'nvim-tree/nvim-web-devicons',
+    'xiyaowong/transparent.nvim',
+    'neovim/nvim-lspconfig',
+    'hrsh7th/cmp-cmdline',
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/nvim-cmp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+    'hrsh7th/vim-vsnip',
 }
 
 require("lazy").setup(plugins_list)
 
-require('autosave').setup {}
+require('autosave').setup()
 
-require('nvim-autopairs').setup {}
+require('nvim-autopairs').setup()
 
 require('nvim_comment').setup()
 
--- require('which-key').setup()
+require('lualine').setup {
+	options = {
+		theme="onelight",
+	}
+}
+
+vim.o.background = 'light'
+vim.cmd("colorscheme doom-one")
