@@ -3,4 +3,4 @@
 require("aaw-plug")
 require("aaw-variables")
 require("aaw-keymaps")
--- require("aaw-completion")
+require("aaw-completion")

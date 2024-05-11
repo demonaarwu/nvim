@@ -32,6 +32,8 @@ local plugins_list = {
     'hrsh7th/cmp-buffer',
     'hrsh7th/cmp-path',
     'hrsh7th/vim-vsnip',
+    'maxmx03/solarized.nvim',
+    'shaunsingh/nord.nvim',
 }
 
 require("lazy").setup(plugins_list)
@@ -44,9 +46,9 @@ require('nvim_comment').setup()
 
 require('lualine').setup {
 	options = {
-		theme="onelight",
+		theme="nord",
 	}
 }
 
-vim.o.background = 'light'
-vim.cmd("colorscheme doom-one")
+vim.o.background = 'dark'
+vim.cmd("colorscheme nord")
