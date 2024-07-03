@@ -1,4 +1,4 @@
-
+-- aaw-variables.lua -- options for Neovim
 
 local global = vim.g
 local opt = vim.o
@@ -10,9 +10,11 @@ opt.laststatus = 2
 opt.termguicolors = true
 opt.autoindent = true
 opt.encoding = "utf-8"
-
+opt.clipboard = "unnamedplus"
 
 -- Dont' pass messages to |ins-completin menu|
 
-opt.shortmess = vim.o.shortmess .. 'I'
+opt.shortmess = vim.o.shortmess .. "I"
 global.timeoutlen = 0
+
+-- aaw-variables.lua ends here
