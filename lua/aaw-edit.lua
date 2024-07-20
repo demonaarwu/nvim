@@ -26,4 +26,6 @@ require("nvim_comment").setup()
 
 require("nvim-ts-autotag").setup()
 
+require("live-server").setup()
+
 -- aaw-edit.lua ends here
