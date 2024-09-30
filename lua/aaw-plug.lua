@@ -24,8 +24,8 @@ local plugins_list = {
     "0x00-ketsu/autosave.nvim",
     "windwp/nvim-autopairs",
     "terrortylor/nvim-comment",
-    "NTBBloodbath/doom-one.nvim",
     "nvim-lualine/lualine.nvim",
+    "miikanissi/modus-themes.nvim",
     "nvim-tree/nvim-web-devicons",
     "xiyaowong/transparent.nvim",
     "neovim/nvim-lspconfig",
@@ -35,7 +35,6 @@ local plugins_list = {
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
     "hrsh7th/vim-vsnip",
-    "maxmx03/solarized.nvim",
     "windwp/nvim-ts-autotag",
     "nvim-treesitter/nvim-treesitter",
     "stevearc/conform.nvim",
@@ -46,10 +45,6 @@ local plugins_list = {
 
 require("lazy").setup(plugins_list)
 
-require("lualine").setup({
-    options = {
-        theme = "onelight",
-    },
-})
+require("lualine").setup()
 vim.o.background = "light"
-vim.cmd("colorscheme doom-one")
+vim.cmd("colorscheme modus_operandi")
