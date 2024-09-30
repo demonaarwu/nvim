@@ -1,16 +1,11 @@
 -- aaw-edit.lua - configs for better edit
 
--- require("conform").setup({
---     formatters_by_ft = {
---         lua = { "stylua" },
---     },
---
---     format_on_save = {
---         -- These options will be passed to conform.format()
---         timeout_ms = 5000,
---         lsp_format = "fallback",
---     },
--- })
+require("conform").setup({
+    formatters_by_ft = {
+        lua = { "stylua" },
+	cpp = { "astyle" },
+    },
+})
 
 require("autosave").setup({
     enable = true,
@@ -38,5 +33,7 @@ require("nvim_comment").setup()
 require("nvim-ts-autotag").setup()
 
 require("live-server").setup()
+
+require('competitest').setup()
 
 -- aaw-edit.lua ends here

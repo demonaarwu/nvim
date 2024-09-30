@@ -11,6 +11,7 @@ opt.termguicolors = true
 opt.autoindent = true
 opt.encoding = "utf-8"
 opt.clipboard = "unnamedplus"
+opt.mouse = "" 
 
 -- Dont' pass messages to |ins-completin menu|
 

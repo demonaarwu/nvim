@@ -36,11 +36,12 @@ local plugins_list = {
     "hrsh7th/cmp-path",
     "hrsh7th/vim-vsnip",
     "maxmx03/solarized.nvim",
-    "shaunsingh/nord.nvim",
     "windwp/nvim-ts-autotag",
     "nvim-treesitter/nvim-treesitter",
     "stevearc/conform.nvim",
     "barrett-ruth/live-server.nvim",
+    'MunifTanjim/nui.nvim',
+    'xeluxee/competitest.nvim',
 }
 
 require("lazy").setup(plugins_list)
